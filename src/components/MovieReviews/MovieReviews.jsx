@@ -12,9 +12,11 @@ export default function MovieReviews() {
   const { movieId } = useParams();
 
   useEffect(() => {
-    setLoading(true);
+    
 
     const fetchReviews = async () => {
+      setLoading(true);
+      setError(null)
       try {
         const response = await axios.get(
           `https://api.themoviedb.org/3/movie/${movieId}/reviews?language=en-US`,
@@ -36,6 +38,8 @@ export default function MovieReviews() {
   }, [movieId]);
   return (
     <div>
+      { loading && <div>Loading ......</div> }
+      {error && <div> {error} </div> }
       {reviews.length > 0 ? (
         reviews.map((review) => (
           <div className={css.movieReviewsContainer} key={review.id}>
