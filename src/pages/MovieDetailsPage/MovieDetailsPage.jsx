@@ -54,7 +54,7 @@ export default function MovieDetailsPage() {
             <h2>
               {movieDetails.title} ({movieDetails.release_date}){" "}
             </h2>
-            <p> User Score: {movieDetails.popularity} </p>
+            <p> <strong>User Score:</strong> {movieDetails.vote_average *10 }% </p>
 
             <p className={css.overview}>
               <strong>Overview:</strong> {movieDetails.overview}
@@ -68,6 +68,7 @@ export default function MovieDetailsPage() {
           </div>
         </div>
         <div className={css.linkContainer}>
+          { console.log(movieDetails) }
           <ul>
             <li>
               <Link to="cast">Cast</Link>
