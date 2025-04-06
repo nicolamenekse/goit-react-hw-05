@@ -1,0 +1,58 @@
+.movieDetailsPageContainer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  justify-content: space-around;
+}
+
+.imgContainer img {
+  height: 500px;
+}
+
+.linkContainer ul {
+  width: 300px;
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.linkContainer ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid tomato;
+  border-radius: 5px;
+}
+
+.linkContainer ul li a:hover{
+    background-color: black;
+    color: tomato;
+}
+
+.backLink{
+  text-decoration: none;
+  color: tomato;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid tomato;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  width: 200px;
+}
+
+.backLink:hover{
+  background-color: tomato;
+  color: white;
+}

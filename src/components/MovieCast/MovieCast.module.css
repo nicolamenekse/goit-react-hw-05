@@ -1,0 +1,20 @@
+.movieCastContainer ul li img{
+    height: 500px;
+}
+.movieCastContainer ul {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.movieCastContainer ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid tomato;
+    padding: 10px;
+    border-radius: 10px;
+}

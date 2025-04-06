@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigationUl {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.34);
+  -moz-box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.34);
+  box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.34);
+  margin-bottom: 20px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navLink:active {
+  color: tomato;
+}
